@@ -15,7 +15,7 @@ font:
   bold_italic:
     family: Fira Code
     style: Bold Italic
-  size: 10
+  size: 8
 theme: github_dark
 colors:
   # Default colors
