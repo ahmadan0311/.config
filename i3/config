@@ -200,4 +200,5 @@ gaps outer 4
 
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id xrandr --output Virtual1 --mode 1920x1080
+exec --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-backends
 exec_always --no-startup-id /home/mikasa/.config/polybar/launch.sh
