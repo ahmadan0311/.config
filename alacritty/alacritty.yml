@@ -16,38 +16,40 @@ font:
     family: Fira Code
     style: Bold Italic
   size: 8
-theme: github_dark
+theme: Tokyonight_Storm
 colors:
+  name: TokyoNight Storm
+  author: Folke
   # Default colors
   primary:
-    background: '0x24292e'
-    foreground: '0xd1d5da'
+    background: '0x24283b'
+    foreground: '0xc0caf5'
 
   # Normal colors
   normal:
-    black: '0x24292e'
-    red: '0xf14c4c'
-    green: '0x23d18b'
-    yellow: '0xe2e210'
-    blue: '0x3b8eea'
-    magenta: '0xbc3fbc'
-    cyan: '0x29b7da'
-    white: '0xd1d5da'
+    black: '0x1D202F'
+    red: '0xf7768e'
+    green: '0x9ece6a'
+    yellow: '0xe0af68'
+    blue: '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan: '0x7dcfff'
+    white: '0xa9b1d6'
 
   # Bright colors
   bright:
-    black: '0x666666'
-    red: '0xf14c4c'
-    green: '0x23d18b'
-    yellow: '0xf5f543'
-    blue: '0x3b8eea'
-    magenta: '0xd670d6'
-    cyan: '0x29b7da'
-    white: '0xd1d5da'
+    black: '0x414868'
+    red: '0xf7768e'
+    green: '0x9ece6a'
+    yellow: '0xe0af68'
+    blue: '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan: '0x7dcfff'
+    white: '0xc0caf5'
 
   indexed_colors:
-    - { index: 16, color: '0xd18616' }
-    - { index: 17, color: '0xf14c4c' }
+    - { index: 16, color: '0xff9e64' }
+    - { index: 17, color: '0xdb4b4b' }
 # Spawn terminal in the same directory
 key_bindings:
   - { key: Return, mods: Alt|Shift, action: SpawnNewInstance }
