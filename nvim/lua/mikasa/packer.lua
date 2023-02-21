@@ -7,6 +7,7 @@ return require('packer').startup(function(use)
 
 	use {'nvim-telescope/telescope.nvim', tag = '0.1.1'}
 
+  use('folke/tokyonight.nvim')
 	use('rose-pine/neovim')
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('nvim-treesitter/playground')
@@ -14,6 +15,9 @@ return require('packer').startup(function(use)
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
   use('lewis6991/gitsigns.nvim')
+  use('CRAG666/code_runner.nvim')
+
+  use { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" }
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',
