@@ -70,10 +70,10 @@ bindsym Mod1+d exec "/home/mikasa/.config/rofi/launchers/type-6/launcher.sh"
 bindsym Mod1+Shift+e exec "/home/mikasa/.config/rofi/powermenu/type-5/powermenu.sh"
 
 # change focus
-bindsym Mod1+$down focus left
-bindsym Mod1+$left focus down
-bindsym Mod1+$right focus up
-bindsym Mod1+$up focus right
+bindsym Mod1+$down focus down
+bindsym Mod1+$left focus left
+bindsym Mod1+$right focus right
+bindsym Mod1+$up focus up
 
 # alternatively, you can use the cursor keys:
 bindsym Mod1+Left focus left
@@ -82,10 +82,10 @@ bindsym Mod1+Up focus up
 bindsym Mod1+Right focus right
 
 # move focused window
-bindsym Mod1+Shift+$down move left
-bindsym Mod1+Shift+$left move down
-bindsym Mod1+Shift+$right move up
-bindsym Mod1+Shift+$up move right
+bindsym Mod1+Shift+$down move down
+bindsym Mod1+Shift+$left move left
+bindsym Mod1+Shift+$right move right
+bindsym Mod1+Shift+$up move up
 
 # alternatively, you can use the cursor keys:
 bindsym Mod1+Shift+Left move left
@@ -175,16 +175,16 @@ bindsym Mod1+Shift+r restart
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 px or 10 ppt
+        bindsym $left       resize shrink width 5 px or 5 ppt
+        bindsym $down       resize grow height 5 px or 5 ppt
+        bindsym $up         resize shrink height 5 px or 5 ppt
+        bindsym $right      resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
+        bindsym Left        resize shrink width 5 px or 5 ppt
+        bindsym Down        resize grow height 5 px or 5 ppt
+        bindsym Up          resize shrink height 5 px or 5 ppt
+        bindsym Right       resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape or Mod1+r
         bindsym Return mode "default"
@@ -204,4 +204,4 @@ gaps outer 4
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 exec --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-backends
-exec_always --no-startup-id /home/mikasa/.config/polybar/launch.sh
+exec_always --no-startup-id /home/mikasa/.config/polybar/blocks/launch.sh
