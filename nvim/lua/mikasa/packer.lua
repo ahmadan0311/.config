@@ -16,8 +16,11 @@ return require('packer').startup(function(use)
 	use('tpope/vim-fugitive')
   use('lewis6991/gitsigns.nvim')
   use('CRAG666/code_runner.nvim')
+  use('numToStr/Comment.nvim')
+  use('windwp/nvim-autopairs')
+  use('windwp/nvim-ts-autotag')
 
-  use { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" }
+  use{'nvim-tree/nvim-tree.lua', requires = ('nvim-tree/nvim-web-devicons')} 
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',
